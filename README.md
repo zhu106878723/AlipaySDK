@@ -15,7 +15,7 @@ AlipaySDK
 
 或者在 `Podfile` 文件下添加
 
-``` pod 'AlipaySDK-2.0' ```
+``` pod 'AlipaySDKOrder-2.0' ```
 
 由于不太经常关注更新，如果发现有新版更新欢迎PR。Thx
 
@@ -28,6 +28,11 @@ __请注意 `ANAlipayResultCode.h ` 并不是官方文件，是本人按照官�
 
 
 ###Changelog
+
+
+####Fork(2016.7.1)
+原先使用：`pod 'AlipaySDK-2.0/Order'`无法完成下载,现在主要是修复这个问题,提供给需要在前端(无需在后端)签名的开发者使用!
+
 
 ####15.0.2 (2015-12-15)
 - iPad上支持跳钱包
