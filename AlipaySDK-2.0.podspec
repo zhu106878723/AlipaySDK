@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name              = "AlipaySDK-2.0"
+  s.name              = "AlipaySDKOrder-2.0"
   s.version           = "15.0.2"
   s.summary           = "Alipay SDK for iOS. You can create alipay order or sign orders with `Order` subspec."
   s.homepage          = "https://b.alipay.com/newIndex.htm"
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform          = :ios, '6.0'
   s.requires_arc      = true
 
-  s.source            = { :git => "https://github.com/candyan/AlipaySDK.git", :tag => "#{s.version}" }
+  s.source            = { :git => "https://github.com/zhu106878723/AlipaySDK", :tag => "#{s.version}" }
   s.frameworks        = 'CoreTelephony', 'SystemConfiguration', 'CoreMotion'
   s.libraries         = 'z', 'c++'
 
@@ -26,11 +26,11 @@ Pod::Spec.new do |s|
     core.public_header_files = 'AlipaySDK.framework/Headers/**/*.h', 'sources/extensions/ANAlipayResultCode.h'
   end
 
-  s.subspec "Order" do |order|
+  #s.subspec "Order" do |order|
     order.source_files = 'sources/order/**/*.{h,m}'
     order.dependency 'AlipaySDK-2.0/Core'
     order.dependency 'OpenSSL'
     order.dependency 'PupaFoundation'
-  end
+  #end
 
 end
